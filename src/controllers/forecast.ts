@@ -1,7 +1,7 @@
 import { Controller, Get } from '@overnightjs/core';
 import { Response, Request } from 'express';
 
-@Controller('previsao')
+@Controller('forecast')
 export class ForecastController {
   @Get('')
   public getForecastForLoggedUser(_: Request, res: Response): void {
