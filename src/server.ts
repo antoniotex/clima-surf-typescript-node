@@ -9,7 +9,7 @@ export class SetupServer extends Server {
     super();
   }
 
-  public init():void{
+  public init(): void {
     this.setupExpress();
     this.setupControllers();
   }
@@ -19,12 +19,12 @@ export class SetupServer extends Server {
     this.app.use(bodyParser.json());
   }
 
-  private setupControllers():void{
-    const forecastController = new ForecastController
-    this.addControllers([forecastController])
+  private setupControllers(): void {
+    const forecastController = new ForecastController();
+    this.addControllers([forecastController]);
   }
 
-  public getApp(): Application{
+  public getApp(): Application {
     return this.app;
   }
 }
