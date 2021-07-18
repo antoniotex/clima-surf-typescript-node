@@ -70,6 +70,8 @@ const stormglassResourceConfig: IConfig = config.get(
   'App.resources.StormGlass'
 );
 
+// OBS: O Jest seta a variavel de ambiente como "test", por isso pega automagicamente as configs de test.json
+
 export class StormGlass {
   readonly stormGlassAPIParams =
     'swellDirection,swellHeight,swellPeriod,waveDirection,waveHeight,windDirection,windSpeed';
