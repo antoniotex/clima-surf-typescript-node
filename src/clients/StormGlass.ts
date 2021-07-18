@@ -98,7 +98,7 @@ export class StormGlass {
       /**
        * This is handling the Axios errors specifically
        */
-      if (HTTPUtil.Request.isRequestError((err as AxiosError))) {
+      if (HTTPUtil.Request.isRequestError(err as AxiosError)) {
         throw new StormGlassResponseError(
           `Error: ${JSON.stringify((err as AxiosError).response?.data)} Code: ${
             (err as AxiosError).response?.status

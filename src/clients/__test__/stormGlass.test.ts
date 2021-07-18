@@ -15,6 +15,7 @@ describe('StormGlass client', () => {
   /**
    * Used for instance method's mocks
    */
+  // Aqui nao passei o tipeof, pq quero uma instancia da classe
   const mockedRequest = new HTTPUtil.Request() as jest.Mocked<HTTPUtil.Request>;
   it('should return the normalized forecast from the StormGlass service', async () => {
     const lat = -33.792726;
