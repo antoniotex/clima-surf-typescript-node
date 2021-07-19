@@ -576,6 +576,13 @@
     "@types/connect" "*"
     "@types/node" "*"
 
+"@types/bson@*":
+  version "4.0.4"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/@types/bson/-/bson-4.0.4.tgz#79d2d26e81070044db2a1a8b2cc2f673c840e1e5"
+  integrity sha1-edLSboEHAETbKhqLLML2c8hA4eU=
+  dependencies:
+    "@types/node" "*"
+
 "@types/config@^0.0.36":
   version "0.0.36"
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/@types/config/-/config-0.0.36.tgz#bf53ca640f3a1a6a2072a9f33e02a44def07a40b"
@@ -674,10 +681,30 @@
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/@types/module-alias/-/module-alias-2.0.1.tgz#e5893236ce922152d57c5f3f978f764f4deeb45f"
   integrity sha1-5YkyNs6SIVLVfF8/l492T03utF8=
 
+"@types/mongodb@^3.5.27":
+  version "3.6.20"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/@types/mongodb/-/mongodb-3.6.20.tgz#b7c5c580644f6364002b649af1c06c3c0454e1d2"
+  integrity sha1-t8XFgGRPY2QAK2Sa8cBsPARU4dI=
+  dependencies:
+    "@types/bson" "*"
+    "@types/node" "*"
+
+"@types/mongoose@^5.11.97":
+  version "5.11.97"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/@types/mongoose/-/mongoose-5.11.97.tgz#80b0357f3de6807eb597262f52e49c3e13ee14d8"
+  integrity sha1-gLA1fz3mgH61lyYvUuScPhPuFNg=
+  dependencies:
+    mongoose "*"
+
 "@types/node@*":
   version "16.3.3"
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/@types/node/-/node-16.3.3.tgz#0c30adff37bbbc7a50eb9b58fae2a504d0d88038"
   integrity sha1-DDCt/ze7vHpQ65tY+uKlBNDYgDg=
+
+"@types/node@14.x || 15.x":
+  version "15.14.2"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/@types/node/-/node-15.14.2.tgz#7af8ab20156586f076f4760bc1b3c5ddfffd1ff2"
+  integrity sha1-evirIBVlhvB29HYLwbPF3f/9H/I=
 
 "@types/node@^13.13.2":
   version "13.13.52"
@@ -1057,6 +1084,19 @@ binary-extensions@^2.0.0:
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha1-dfUC7q+f/eQvyYgpZFvk6na9ni0=
 
+bl@^2.2.1:
+  version "2.2.1"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/bl/-/bl-2.2.1.tgz#8c11a7b730655c5d56898cdc871224f40fd901d5"
+  integrity sha1-jBGntzBlXF1WiYzchxIk9A/ZAdU=
+  dependencies:
+    readable-stream "^2.3.5"
+    safe-buffer "^5.1.1"
+
+bluebird@3.5.1:
+  version "3.5.1"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
+  integrity sha1-2VUfnemPH82h5oPRfukaBgLuLrk=
+
 body-parser@1.19.0, body-parser@^1.19.0:
   version "1.19.0"
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/body-parser/-/body-parser-1.19.0.tgz#96b2709e57c9c4e09a6fd66a8fd979844f69f08a"
@@ -1133,6 +1173,11 @@ bser@2.1.1:
   integrity sha1-5nh9og7OnQeZhTPP2d5vXDj0vAU=
   dependencies:
     node-int64 "^0.4.0"
+
+bson@^1.1.4:
+  version "1.1.6"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/bson/-/bson-1.1.6.tgz#fb819be9a60cd677e0853aee4ca712a785d6618a"
+  integrity sha1-+4Gb6aYM1nfghTruTKcSp4XWYYo=
 
 buffer-from@1.x, buffer-from@^1.0.0:
   version "1.1.1"
@@ -1458,19 +1503,19 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   dependencies:
     ms "2.0.0"
 
+debug@3.1.0, debug@=3.1.0:
+  version "3.1.0"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE=
+  dependencies:
+    ms "2.0.0"
+
 debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   version "4.3.2"
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
   integrity sha1-8KScGKyHeeMdSgxgKd+3aHPHQos=
   dependencies:
     ms "2.1.2"
-
-debug@=3.1.0:
-  version "3.1.0"
-  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
-  integrity sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE=
-  dependencies:
-    ms "2.0.0"
 
 debug@^3.1.0:
   version "3.2.7"
@@ -1530,6 +1575,11 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
+
+denque@^1.4.1:
+  version "1.5.0"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/denque/-/denque-1.5.0.tgz#773de0686ff2d8ec2ff92914316a47b73b1c73de"
+  integrity sha1-dz3gaG/y2Owv+SkUMWpHtzscc94=
 
 depd@~1.1.2:
   version "1.1.2"
@@ -3052,6 +3102,11 @@ json5@2.x, json5@^2.1.1, json5@^2.1.2:
   dependencies:
     minimist "^1.2.5"
 
+kareem@2.3.2:
+  version "2.3.2"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/kareem/-/kareem-2.3.2.tgz#78c4508894985b8d38a0dc15e1a8e11078f2ca93"
+  integrity sha1-eMRQiJSYW404oNwV4ajhEHjyypM=
+
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
   version "3.2.2"
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
@@ -3154,6 +3209,11 @@ media-typer@0.3.0:
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
+memory-pager@^1.0.2:
+  version "1.5.0"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/memory-pager/-/memory-pager-1.5.0.tgz#d8751655d22d384682741c972f2c3d6dfa3e66b5"
+  integrity sha1-2HUWVdItOEaCdByXLyw9bfo+ZrU=
+
 merge-descriptors@1.0.1:
   version "1.0.1"
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
@@ -3254,6 +3314,59 @@ module-alias@^2.2.2:
   version "2.2.2"
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/module-alias/-/module-alias-2.2.2.tgz#151cdcecc24e25739ff0aa6e51e1c5716974c0e0"
   integrity sha1-FRzc7MJOJXOf8KpuUeHFcWl0wOA=
+
+mongodb@3.6.10:
+  version "3.6.10"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/mongodb/-/mongodb-3.6.10.tgz#f10e990113c86b195c8af0599b9b3a90748b6ee4"
+  integrity sha1-8Q6ZARPIaxlcivBZm5s6kHSLbuQ=
+  dependencies:
+    bl "^2.2.1"
+    bson "^1.1.4"
+    denque "^1.4.1"
+    optional-require "^1.0.3"
+    safe-buffer "^5.1.2"
+  optionalDependencies:
+    saslprep "^1.0.0"
+
+mongoose-legacy-pluralize@1.0.2:
+  version "1.0.2"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
+  integrity sha1-O6n5H6UHtRhtOZ+0CFS/8Y+1Y+Q=
+
+mongoose@*, mongoose@^5.13.3:
+  version "5.13.3"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/mongoose/-/mongoose-5.13.3.tgz#42cb40207bbcaca9c6fa94b0a8c0a38181c1965e"
+  integrity sha1-QstAIHu8rKnG+pSwqMCjgYHBll4=
+  dependencies:
+    "@types/mongodb" "^3.5.27"
+    "@types/node" "14.x || 15.x"
+    bson "^1.1.4"
+    kareem "2.3.2"
+    mongodb "3.6.10"
+    mongoose-legacy-pluralize "1.0.2"
+    mpath "0.8.3"
+    mquery "3.2.5"
+    ms "2.1.2"
+    regexp-clone "1.0.0"
+    safe-buffer "5.2.1"
+    sift "13.5.2"
+    sliced "1.0.1"
+
+mpath@0.8.3:
+  version "0.8.3"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/mpath/-/mpath-0.8.3.tgz#828ac0d187f7f42674839d74921970979abbdd8f"
+  integrity sha1-gorA0Yf39CZ0g510khlwl5q73Y8=
+
+mquery@3.2.5:
+  version "3.2.5"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/mquery/-/mquery-3.2.5.tgz#8f2305632e4bb197f68f60c0cffa21aaf4060c51"
+  integrity sha1-jyMFYy5LsZf2j2DAz/ohqvQGDFE=
+  dependencies:
+    bluebird "3.5.1"
+    debug "3.1.0"
+    regexp-clone "^1.0.0"
+    safe-buffer "5.1.2"
+    sliced "1.0.1"
 
 ms@2.0.0:
   version "2.0.0"
@@ -3428,6 +3541,11 @@ onetime@^5.1.0:
   integrity sha1-0Oluu1awdHbfHdnEgG5SN5hcpF4=
   dependencies:
     mimic-fn "^2.1.0"
+
+optional-require@^1.0.3:
+  version "1.0.3"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/optional-require/-/optional-require-1.0.3.tgz#275b8e9df1dc6a17ad155369c2422a440f89cb07"
+  integrity sha1-J1uOnfHcahetFVNpwkIqRA+Jywc=
 
 optionator@^0.8.1, optionator@^0.8.3:
   version "0.8.3"
@@ -3724,6 +3842,11 @@ regex-not@^1.0.0, regex-not@^1.0.2:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
 
+regexp-clone@1.0.0, regexp-clone@^1.0.0:
+  version "1.0.0"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/regexp-clone/-/regexp-clone-1.0.0.tgz#222db967623277056260b992626354a04ce9bf63"
+  integrity sha1-Ii25Z2IydwViYLmSYmNUoEzpv2M=
+
 regexpp@^2.0.1:
   version "2.0.1"
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/regexpp/-/regexpp-2.0.1.tgz#8d19d31cf632482b589049f8281f93dbcba4d07f"
@@ -3845,6 +3968,11 @@ safe-buffer@5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha1-mR7GnSluAxN0fVm9/St0XDX4go0=
 
+safe-buffer@5.2.1, safe-buffer@^5.1.1, safe-buffer@^5.1.2:
+  version "5.2.1"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
+  integrity sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=
+
 safe-regex@^1.1.0:
   version "1.1.0"
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/safe-regex/-/safe-regex-1.1.0.tgz#40a3669f3b077d1e943d44629e157dd48023bf2e"
@@ -3871,6 +3999,13 @@ sane@^4.0.3:
     micromatch "^3.1.4"
     minimist "^1.1.1"
     walker "~1.0.5"
+
+saslprep@^1.0.0:
+  version "1.0.3"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/saslprep/-/saslprep-1.0.3.tgz#4c02f946b56cf54297e347ba1093e7acac4cf226"
+  integrity sha1-TAL5RrVs9UKX40e6EJPnrKxM8iY=
+  dependencies:
+    sparse-bitfield "^3.0.3"
 
 saxes@^5.0.1:
   version "5.0.1"
@@ -3983,6 +4118,11 @@ side-channel@^1.0.4:
     get-intrinsic "^1.0.2"
     object-inspect "^1.9.0"
 
+sift@13.5.2:
+  version "13.5.2"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/sift/-/sift-13.5.2.tgz#24a715e13c617b086166cd04917d204a591c9da6"
+  integrity sha1-JKcV4TxhewhhZs0EkX0gSlkcnaY=
+
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.3"
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
@@ -4006,6 +4146,11 @@ slice-ansi@^2.1.0:
     ansi-styles "^3.2.0"
     astral-regex "^1.0.0"
     is-fullwidth-code-point "^2.0.0"
+
+sliced@1.0.1:
+  version "1.0.1"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/sliced/-/sliced-1.0.1.tgz#0b3a662b5d04c3177b1926bea82b03f837a2ef41"
+  integrity sha1-CzpmK10Ewxd7GSa+qCsD+Dei70E=
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
@@ -4075,6 +4220,13 @@ source-map@^0.7.3:
   version "0.7.3"
   resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
   integrity sha1-UwL4FpAxc1ImVECS5kmB91F1A4M=
+
+sparse-bitfield@^3.0.3:
+  version "3.0.3"
+  resolved "https://pkgs.dev.azure.com/golhub/_packaging/gol-npm/npm/registry/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz#ff4ae6e68656056ba4b3e792ab3334d38273ca11"
+  integrity sha1-/0rm5oZWBWuks+eSqzM004JzyhE=
+  dependencies:
+    memory-pager "^1.0.2"
 
 spdx-correct@^3.0.0:
   version "3.1.1"

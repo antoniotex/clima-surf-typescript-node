@@ -1,0 +1,4 @@
+docker run -p 27017:27017 -d mongo
+-d para rodar em background
+mongo é o nome da imagem
+-p 27017:27017 configura as portas
