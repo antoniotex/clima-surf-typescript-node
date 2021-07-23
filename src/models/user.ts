@@ -1,6 +1,7 @@
 import mongoose, { Document, Model } from 'mongoose';
 // import AuthService from '@src/services/auth';
 // import logger from '@src/logger';
+import bcrypt from 'bcrypt';
 
 export interface User {
   _id?: string;
@@ -40,5 +41,13 @@ schema.path('email').validate(async (email: string) => {
   const emailCount = await mongoose.models.User.countDocuments({ email });
   return !emailCount;
 }, 'already exists in the database.', CUSTOM_VALIDATION.DUPLICATED)
+
+export async function hashPassword(password: string, salt = 10):Promise<string>{
+  return await bcrypt.hash(password, salt);
+}
+
+export async function compairPasswords(hashedPassword: string, password: string): Promise<boolean>{
+  return await bcrypt.compare(password, hashedPassword);
+}
 
 export const User: Model<UserModel> = mongoose.model('User', schema)
